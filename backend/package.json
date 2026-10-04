@@ -1,0 +1,32 @@
+{
+  "name": "senticash-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "seed": "node db/seed.js",
+    "sync": "node db/sync.js",
+    "train": "node scripts/train.js",
+    "test": "node test/nlp.test.js && node test/liveSync.test.js",
+    "test:pipeline": "node test/pipeline.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "ml-random-forest": "^2.1.0",
+    "multer": "^2.4.0",
+    "neo4j-driver": "^6.2.0",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "description": "SentinCash demo API — SQLite via node:sqlite, rule-based helpline NLP, and an in-process Random Forest. No external database, Python or Docker required."
+}
